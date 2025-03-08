@@ -1,21 +1,49 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-    background-color: #ffff;
-        font-family:"Montserrat", sans-serif;
+
+* {
+font-family:"Montserrat", sans-serif;
+box-sizing: border-box;   
+ 
 }
 
-.container {
-    width: 960px;
-    margin: 0 auto;
+
+
+body {
+    background-color: #ffff;
+    background-image:url("../images/bg.png.jpg");    
 }
+
+/****** Layout ******/
+
+.container {
+    background-color: #fff;
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(12, 1fr);
+    width: min (95%, 75em);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container > * {
+    grid-column: span 12;
+}
+
+/* Desktop Layout */
+
 
 header {
     text-align: left;
     background-color: dodgerblue;
     color: #fff;
     padding: 30px 40px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: clamp (32px, 2vw, 48px);
 }
 
 h2 {
@@ -27,10 +55,20 @@ h3 {
     font-size: 24px;
 }
 aside img {
-    width: 180px;
+    width: 15%;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 999px;
     border: 6px solid dodgerblue;
 }
 
+
+.menu-items li a {
+    color:red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navmenu li a {
+color: blue
+}
