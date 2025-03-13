@@ -9,21 +9,70 @@ box-sizing: border-box;
 }
 
 
-
 body {
     background-color: #ffff;
     margin: 0;
-    background-image:url("../images/bg.png.jpg");    
+    background-image:url("../images/bg.png.jpg");
+    background-size: 500px;
+}
+
+
+header {
+    text-align: left;
+    background-color: #ff914d;
+    color: #fff;
+    padding: 30px 40px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: clamp(32px, 4vw, 48px);
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+aside {
+text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+img.circle {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 6px solid #ff914d;
+}
+
+/****** Navigation ******/
+
+#navmenu li a {
+    color: #ff914d;
+    }
+
+
+.menu-items li a {
+    color:#ff914d;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /****** Layout ******/
 
 .container {
-    background-color: #fff;
+    background-color: #ffff;
     display: grid;
     grid-gap: 1.5em;
     grid-template-columns: repeat(12, 1fr);
-    width: min (95%, 75rem);
+    width: min(95%, 75rem);
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -32,51 +81,43 @@ body {
     grid-column: span 12;
 }
 
-/* Desktop Layout */
-@media screen and (min-width: 40rem) {
-    .col-span-8 {
-        grid-column: span 8;
-    }
-    .col-span-8 {
-        grid-column: span 8;
-    }
-}
-
-header {
-    text-align: left;
-    background-color: dodgerblue;
-    color: #fff;
-    padding: 30px 40px;
-}
-
-h1 {
-    text-transform: uppercase;
-    font-size: clamp (32px, 2vw, 48px);
-}
-
-h2 {
-    font-size: 36px;
-    
-}
-
-h3 {
-    font-size: 24px;
-}
-aside img {
-    width: 15%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 999px;
-    border: 6px solid dodgerblue;
-}
-
-
-.menu-items li a {
-    color:red;
-    font-weight: bold;
+/* Button Styles */
+a.button {
+    display: block;
+    min-width: 200px;
+    padding: 12px 20px;
+    margin-top: 20px;
     text-decoration: none;
-}
+    background-color: #ff914d;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    }
+    
+    a.button:hover {
+        transform: translateY(-2px);
+        background-color: #fc7827;
+        box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.56);
+    }
+    a.button:active {
+        background-color: #ffbb90;
+    }
+    
+    a.button:visited {
+    
+    }
 
-#navmenu li a {
-color: blue
-}
+    /* Desktop Layout */
+    @media screen and (min-width: 40em) {
+    a.button {
+    display: inline-block;
+    }
+    .col-span-8 {
+        grid-column: span 8;
+    }
+    .col-span-4 {
+        grid-column: span 4;
+    }
+    }
