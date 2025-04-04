@@ -1,0 +1,387 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+font-family: "Kaisei HarunoUmi", serif;
+box-sizing: border-box;   
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #EFE7DD;
+}
+
+
+
+header {
+    text-align: left;
+    background-image:url("../images/Allpress header Image.jpg");
+    height: 100%;
+    background-position: center;
+    color: #EFE7DD;
+    padding: 30px 40px;
+}
+
+
+/* First Home Section - 3 Column Grid */
+.all-columns {
+  float: left;
+  width: 33.33%;
+  padding: 13px;
+  min-height: 350px;
+  text-align: left;
+}
+
+.all-rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    .all-columns {
+      width: 100%;
+    }
+}
+
+/* End of First Home Section - 3 Column Grid */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Second Home Section - 3 Column Grid */
+.all-columns2 {
+  float: left;
+  width: 33.33%;
+  padding: 13px;
+  min-height: 350px;
+  text-align: left;
+}
+
+.all-rows2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    .all-columns {
+      width: 100%;
+    }
+}
+
+/* End of Scond Home Section - 3 Column Grid */
+
+
+h1 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-family: "Kaisei HarunoUmi", serif;
+    color: #EFE7DD;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: "Kaisei HarunoUmi", serif;
+    color: #341D13;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: "Kaisei HarunoUmi", serif;
+    color: #341D13;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 780;
+  text-transform: uppercase;
+  font-family: "Jaldi-Regular", sans-serif;
+  color: #B89061;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 780;
+  font-family: "Jaldi-Regular", sans-serif;
+  color: #341D13;
+}
+
+
+p {
+  font-size: 20px;
+  font-family: "Jaldi-Regular", sans-serif;
+  color: #341D13;
+}
+
+
+
+
+
+
+
+
+
+
+aside {
+text-align: center;
+padding-top: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+img.circle {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 999px;
+}
+
+/****** Navigation ******/
+#nav-menu {
+    background-color: pink;
+    padding: 12px 1rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+  }
+
+  #nav-menu ul {
+    display: none; /* hide on mobile by default */
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #nav-menu ul.active {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #nav-menu ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+
+#nav-menu li a {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 99px;
+    transition: all 0.2s ease;
+    min-width: 150px;
+    text-align: center;
+  }
+  
+  #nav-menu li.active a,
+  #nav-menu li a:hover {
+    background-color: rgb(234, 126, 144);
+  }
+
+
+#toggle-button {
+  margin-left: auto;
+}
+
+
+#nav-menu ul.active + #toggle-button {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+  }
+
+
+
+
+
+.menu-items li a {
+    color: white;   
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+a:link, a:visited {
+    color:#ff914d;;
+    text-decoration: none;
+}
+
+a:hover {
+    color:lightgray;
+    text-decoration: underline;
+}
+
+
+
+
+/****** Layout ******/
+
+.container {
+    
+    display: grid;
+    column-gap: 1.5em;
+    grid-template-columns: repeat(12, 1fr);
+    width: min(95%, 75rem);
+    margin: 0 auto;
+
+    background-color: #ffff;
+    box-shadow: 0 0 36px -12px rgba(25, 88, 151, 0.35);
+}
+
+.container > * {
+    grid-column: span 12;
+    padding-inline: 20px;
+}
+
+
+
+
+
+
+/* Allpress Button Styles */
+a.button {
+    display: block;
+    min-width: 200px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20 px;
+    font-family: "Jaldi";
+    background-color: #B89061;
+    color: #EFE7DD;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 4px;
+
+    
+
+
+
+
+      /* transition: background-color 2s ease; */
+  transition: all 0.6s cubic-bezier(.24,.96,.57,1.17);
+} 
+
+    a.button:hover {
+        transform: translateY(-2px);
+        background-color:#B89061;
+        box-shadow: 0px 10px 28px -10px rgba(0,0,0,0.56);
+    }
+    
+    a.button:active {
+        background-color: #ffbb90;
+    }
+    
+    a.button:visited {
+    
+    }
+
+
+    /* Card styles */
+.card {
+    background-color: #fff;
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 0 24px -8px rgba(0, 0, 0, 0.5);
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  
+  .card-text {
+    padding: 0 2rem;
+  }
+
+
+    /* Desktop Layout */
+
+    @media (min-width: 40em) {
+    #nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    }
+    
+    #toggle-button {
+    display: none;
+    }  
+        
+     a.button {
+    display: inline-block;
+    }
+    .col-span-8 {
+        grid-column: span 8;
+    }
+    .col-span-4 {
+        grid-column: span 4;
+    }
+
+    .work-section {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    }
+    
+    .card {
+        flex: 0 1 324px;
+    }
+
+
+
+   /****** Navigation Using Flexbox ******/
+   nav {
+    background-color:#f49ba3;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+   }
+
+   nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+   }
+
+   nav li {
+    margin: 0 0.5rem;
+   }
+
+   nav a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 1rem;
+    display: block;
+    transition: ease-in-out 250ms;
+   }
+
+   nav a:hover {
+    background-color:#ff914d;
+    color:#fff;
+   }
