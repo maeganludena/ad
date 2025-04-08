@@ -8,106 +8,123 @@ box-sizing: border-box;
 }
 
 
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #EFE7DD;
+.logo img {
+position: absolute;
+width: 140px;
+padding-left: 20px;
+padding-top: 20px;
 }
-
-
-
-header {
-    text-align: left;
-    background-image:url("../images/Allpress header Image.jpg");
-    height: 100%;
-    background-position: center;
-    color: #EFE7DD;
-    padding: 30px 40px;
-}
-
-
-/* First Home Section - 3 Column Grid */
-.all-columns {
-  float: left;
-  width: 33.33%;
-  padding: 13px;
-  min-height: 350px;
-  text-align: left;
-}
-
-.all-rows:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 768px) {
-    .all-columns {
-      width: 100%;
-    }
-}
-
-/* End of First Home Section - 3 Column Grid */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Second Home Section - 3 Column Grid */
-.all-columns2 {
-  float: left;
-  width: 33.33%;
-  padding: 13px;
-  min-height: 350px;
-  text-align: left;
-}
-
-.all-rows2:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 768px) {
-    .all-columns {
-      width: 100%;
-    }
-}
-
-/* End of Scond Home Section - 3 Column Grid */
-
 
 h1 {
-    font-size: clamp(32px, 4vw, 48px);
-    font-family: "Kaisei HarunoUmi", serif;
-    color: #EFE7DD;
+  font-size: clamp(32px, 4vw, 48px);
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #EFE7DD;
 }
 
 h2 {
-    font-size: 20px;
-    font-family: "Kaisei HarunoUmi", serif;
-    color: #341D13;
-    text-align: center;
-    padding-top: 40px;
+  font-size: 20px;
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #341D13;
+  text-align: center;
+  padding-top: 40px;
 }
 
 h3 {
-    font-size: 20px;
-    font-family: "Kaisei HarunoUmi", serif;
-    color: #341D13;
+  font-size: 20px;
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #341D13;
 }
 
 h4 {
+font-size: 14px;
+font-weight: 780;
+text-transform: uppercase;
+font-family: "Jaldi-Regular", sans-serif;
+color: #B89061;
+}
+
+h5 {
+font-size: 18px;
+font-weight: 780;
+font-family: "Jaldi-Regular", sans-serif;
+color: #341D13;
+}
+
+
+p {
+font-size: 20px;
+font-family: "Jaldi-Regular", sans-serif;
+color: #341D13;
+}
+
+.img-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 82vh;
+  text-align: left;
+  background-image:url("../images/BG.jpg");
+  background-position: center;
+  color: #EFE7DD;
+  padding: 30px 40px;
+}
+  
+ h1 {
+  position: relative;
+  top: 25%;
+  max-width: 900px;
+  }
+
+
+
+
+
+/* End of First Home Section - 3 Column Grid */
+
+.secondRow {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color:#EFE7DD;
+  padding-top: 35px;
+  height: 80vh;
+}
+
+.Viewallproducts {
+  top: 20px;
+  text-decoration: underline;
+  font-family: "Jaldi-Regular", sans-serif;
+  font-size: 14px;
+}
+
+.single-col {
+  float: left;
+  width: 30vw;
+  padding: 20px;
+  min-height: 350px;
+  text-align: left;
+  margin: 20px;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.bags{
+  position: absolute;
+  top: 20%;
+  left: 41%;
+  scale: 200%;
+}
+
+.Duo {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  scale: 200%;
+}
+
+.Product-Stories2 {
+  position: absolute;
+  top: 65%;
+  left: 70%;
   font-size: 14px;
   font-weight: 780;
   text-transform: uppercase;
@@ -115,7 +132,10 @@ h4 {
   color: #B89061;
 }
 
-h5 {
+.Colombia {
+  position: absolute;
+  top: 70%;
+  left: 70%;
   font-size: 18px;
   font-weight: 780;
   font-family: "Jaldi-Regular", sans-serif;
@@ -123,136 +143,159 @@ h5 {
 }
 
 
-p {
-  font-size: 20px;
+.Split-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  position: relative;
+  background-color: #EFE7DD;
+}
+
+.FindaCafe {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #EFE7DD;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.Dis {
+  position: absolute;
+  top: 79%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-family: "Jaldi-Regular", sans-serif;
+  color: #EFE7DD;
+  font-size: 17px;
+}
+
+.FindaRoastery {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #EFE7DD;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.Visit {
+  position: absolute;
+  top: 79%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-family: "Jaldi-Regular", sans-serif;
+  color: #EFE7DD;
+  font-size: 17px;
+}
+
+
+.thirdRow {
+  position: relative;
+  height: 80vh;
+  background-color:  #EFE7DD;
+}
+
+.decades {
+  width: 900px;
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Kaisei HarunoUmi", serif;
+  text-align: center;
+  color: #341D13;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+
+.fourthRow {
+  position: relative;
+  background-color:#EFE7DD;
+  height: 60vh;
+}
+
+.Product-Stories {
+  position: absolute;
+  top: 65%;
+  left: 36%;
+  font-size: 14px;
+  font-weight: 780;
+  text-transform: uppercase;
+  font-family: "Jaldi-Regular", sans-serif;
+  color: #B89061;
+}
+
+.FindFlavor {
+  position: absolute;
+  top: 70%;
+  left: 36%;
+  font-size: 18px;
+  font-weight: 780;
   font-family: "Jaldi-Regular", sans-serif;
   color: #341D13;
 }
 
-
-
-
-
-
-
-
-
-
-aside {
-text-align: center;
-padding-top: 20px;
+footer {
+  position: relative;
+  height: 5vh;
+  text-align: center;
+  color: white;
+  background-color: #27150F;
 }
 
-img {
-    width: 100%;
+.single-col-stat {
+  float: left;
+  width: 30vw;
+  padding: 20px;
+  min-height: 350px;
+  text-align: left;
+  margin: 20px;
 }
 
-img.circle {
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 999px;
+.Browse {
+  top: 20px;
+  text-decoration: underline;
+  font-family: "Jaldi-Regular", sans-serif;
+  font-size: 14px;
 }
 
-/****** Navigation ******/
-#nav-menu {
-    background-color: pink;
-    padding: 12px 1rem;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-  }
+.fifthRow {
+  position: relative;
+  background-color:#EFE7DD;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.collage {
+  position: relative;
+  left: 15%;
+}
 
-  #nav-menu ul {
-    display: none; /* hide on mobile by default */
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  #nav-menu ul.active {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #nav-menu ul li {
-    margin: 0;
-    padding: 0;
-  }
-
-
-#nav-menu li a {
-    display: inline-block;
-    color: #fff;
-    padding: 12px 20px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 99px;
-    transition: all 0.2s ease;
-    min-width: 150px;
-    text-align: center;
-  }
-  
-  #nav-menu li.active a,
-  #nav-menu li a:hover {
-    background-color: rgb(234, 126, 144);
-  }
-
-
-#toggle-button {
-  margin-left: auto;
+.establish {
+  position: relative;
+  top: 30%;
+  padding: 20px;
+  margin-right: 15%;
+  font-size: 18px;
+  font-family: "Jaldi-Regular", sans-serif;
+}
+.single-col:hover {
+  box-shadow: 0px 0px 20px 0px black;
 }
 
 
-#nav-menu ul.active + #toggle-button {
-    position: absolute;
-    top: 12px;
-    right: 16px;
-  }
-
-
-
-
-
-.menu-items li a {
-    color: white;   
-    font-weight: bold;
-    text-decoration: none;
-}
-
-
-a:link, a:visited {
-    color:#ff914d;;
-    text-decoration: none;
-}
-
-a:hover {
-    color:lightgray;
-    text-decoration: underline;
-}
-
-
-
-
-/****** Layout ******/
-
-.container {
-    
-    display: grid;
-    column-gap: 1.5em;
-    grid-template-columns: repeat(12, 1fr);
-    width: min(95%, 75rem);
-    margin: 0 auto;
-
-    background-color: #ffff;
-    box-shadow: 0 0 36px -12px rgba(25, 88, 151, 0.35);
-}
-
-.container > * {
-    grid-column: span 12;
-    padding-inline: 20px;
+.single-col img {
+  width: 150px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
 
 
@@ -261,96 +304,392 @@ a:hover {
 
 
 /* Allpress Button Styles */
+
 a.button {
-    display: block;
+  top: 25%;
+    position: relative;
+    display: inline-block;
     min-width: 200px;
     padding: 12px 20px;
     margin-top: 20px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20 px;
+    font-size: 20px;
     font-family: "Jaldi";
     background-color: #B89061;
-    color: #EFE7DD;
+    color: #ffff;
     text-align: center;
-    font-weight: 600;
+    font-weight: 300;
     border-radius: 4px;
-
-    
-
-
-
 
       /* transition: background-color 2s ease; */
   transition: all 0.6s cubic-bezier(.24,.96,.57,1.17);
-} 
+}
 
-    a.button:hover {
-        transform: translateY(-2px);
-        background-color:#B89061;
-        box-shadow: 0px 10px 28px -10px rgba(0,0,0,0.56);
-    }
-    
-    a.button:active {
-        background-color: #ffbb90;
-    }
-    
-    a.button:visited {
-    
-    }
-
-
-    /* Card styles */
-.card {
-    background-color: #fff;
+a.button2 {
+  top: 65%;
+  left: 43%;
+    position: relative;
+    display: inline-block;
+    min-width: 200px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Jaldi";
+    background-color: #B89061;
+    color: #ffff;
     text-align: center;
-    margin: 1rem;
-    padding-bottom: 2rem;
-    box-shadow: 0 0 24px -8px rgba(0, 0, 0, 0.5);
-    border-radius: 18px;
-    overflow: hidden;
-  }
-  
-  .card-text {
-    padding: 0 2rem;
-  }
+    font-weight: 300;
+    border-radius: 4px;
+
+      /* transition: background-color 2s ease; */
+  transition: all 0.6s cubic-bezier(.24,.96,.57,1.17);
+}
+
+a.button3 {
+  top: 30%;
+  left: 2%;
+    position: relative;
+    display: inline-block;
+    min-width: 200px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Jaldi";
+    background-color: #B89061;
+    color: #ffff;
+    text-align: center;
+    font-weight: 300;
+    border-radius: 4px;
+
+      /* transition: background-color 2s ease; */
+  transition: all 0.6s cubic-bezier(.24,.96,.57,1.17);
+}
+
+a.button4 {
+  top: 30%;
+  left: 2%;
+    position: relative;
+    display: inline-block;
+    min-width: 200px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Jaldi";
+    background-color: #B89061;
+    color: #ffff;
+    text-align: center;
+    font-weight: 300;
+    border-radius: 4px;
+
+      /* transition: background-color 2s ease; */
+  transition: all 0.6s cubic-bezier(.24,.96,.57,1.17);
+}
+
+
+.button:hover {
+  color:lightgray;
+  text-decoration: underline;
+}
+
+
+ /* Our Story Page */
+
+.firstRow {
+  position: relative;
+  background-color:#EFE7DD;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.brew {
+  position: relative;
+  top: 63%;
+  left: 19%;
+  scale: 650%;
+
+}
+
+.NEWS {
+  position: absolute;
+  top: 39%;
+  left: 60%;
+  font-size: 14px;
+  font-weight: 780;
+  text-transform: uppercase;
+  font-family: "Jaldi-Regular", sans-serif;
+  color: #B89061;
+}
+
+.Who-we-are {
+  position: relative;
+  top: 46%;
+  left: 20%;
+  padding: 0;
+  margin-right: 35%;
+  font-family: "Kaisei HarunoUmi", serif;
+  text-align: left;
+  color: #341D13;
+  font-weight: bold;
+  font-size:40px;
+}
+
+.DesignStory {
+  position: relative;
+  top: 56%;
+  left: 20%;
+  text-decoration: underline;
+  font-family: "Jaldi-Regular", sans-serif;
+  font-size: 14px;
+}
+
+.ProductStories {
+  position: relative;
+  top: 53.2%;
+  left: 33%;
+  text-decoration: underline;
+  font-family: "Jaldi-Regular", sans-serif;
+  font-size: 14px;
+}
+
+.secondPageRow {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #F9F3EE;
+  padding-top: 35px;
+  height: 80vh;
+}
+
+.WeRoast {
+  position: absolute;
+  width: 800px;
+  margin-right: 20%;
+  margin-left: 23%;
+  top: 30%;
+  font-family: "Kaisei HarunoUmi", serif;
+  text-align: left;
+  color: #341D13;
+  font-size: 26px;
+}
+
+
+.Relationships {
+  position: relative;
+  text-align: left;
+  top: 45%;
+  margin-right: 26%;
+  margin-left: 25%;
+  font-family: "Jaldi-Regular", sans-serif;
+  font-size: 20px;
+  color: #341D13;   
+ }
+
+ .thirdRow2 {
+  position: relative;
+  height: 60vh;
+  background-color:  #F9F3EE;
+}
+
+
+.secondRow2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color:#F9F3EE;
+  padding-top: 35px;
+  height: 80vh;
+}
+
+
+ .Split-images2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  position: relative;
+  margin: -4%;
+  scale: 60%;
+  background-color: #EFE7DD;
+}
+
+
+.WeExist {
+  position: relative;
+  text-align: left;
+  top: 7%;
+  margin-right: 26%;
+  margin-left: 30%;
+  font-family: "Jaldi-Regular", sans-serif;
+  font-size: 20px;
+  color: #341D13;   
+ }
+
+
+ .WeSource { 
+  padding-top: 2%;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: "Jaldi-Regular", sans-serif;
+  text-align: left;
+  color: #341D13;
+  font-size: 32px;
+  font-weight: bold;
+ }
+
+ 
+.FromBeing {
+  position: relative;
+  text-align: left;
+  top: 7%;
+  margin-right: 26%;
+  margin-left: 30%;
+  font-family: "Jaldi-Regular", sans-serif;
+  font-size: 20px;
+  color: #341D13;   
+ }
+
+ .Shirt {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    scale: 200%;
+ }
+
+ .More-Articles {
+  width: 98vw;
+  top: 0;
+  left: 2%;
+  text-indent: 14%;
+  min-height: 5px;
+  overflow: hidden;
+  text-align: left;
+  background-color:  #EFE7DD;
+ }
+
+ .More-Articles2 {
+  width: 98vw;
+  top: 2%;
+  left: 2%;
+  text-indent: 2%;
+  min-height: 5px;
+  overflow: hidden;
+  text-align: left;
+  background-color:  #EFE7DD;
+ }
+
+ .NEWS_1 {
+  position: absolute;
+  top: 65%;
+  left: 2%;
+  font-size: 14px;
+  font-weight: 780;
+  text-transform: uppercase;
+  font-family: "Jaldi-Regular", sans-serif;
+  color: #B89061;
+}
+
+.X-BOUND {
+  position: absolute;
+  top: 70%;
+  left: 2%;
+  font-size: 18px;
+  font-weight: 780;
+  font-family: "Jaldi-Regular", sans-serif;
+  color: #341D13;
+}
+
+.NEWS_2 {
+  position: absolute;
+  top: 65%;
+  left: 36%;
+  font-size: 14px;
+  font-weight: 780;
+  text-transform: uppercase;
+  font-family: "Jaldi-Regular", sans-serif;
+  color: #B89061;
+ }
+
+ .fourthRow2 {
+  position: relative;
+  background-color:#EFE7DD;
+  height: 60vh;
+}
+
+.Teal {
+  position: absolute;
+  top: 20%;
+  left: 41%;
+  scale: 200%;
+}
+
+.Hoka {
+  position: absolute;
+  top: 70%;
+  left: 36%;
+  font-size: 18px;
+  font-weight: 780;
+  font-family: "Jaldi-Regular", sans-serif;
+  color: #341D13;
+}
+
+.fifthRow2 {
+  position: relative;
+  background-color:#EFE7DD;
+  display: grid;
+  height: 60vh;
+  grid-template-columns: 1fr 2fr;
+}
+
+.Sky {
+  position: absolute;
+  scale: 50%;
+  top: 0;
+}
+
+
+.establish2 {
+  position: relative;
+  top: 42%;
+  left: 10%;
+  margin-right: 15%;
+  font-size: 18px;
+  font-weight: 780;
+  font-family: "Jaldi-Regular", sans-serif;
+  color: #341D13;
+}
+
+.DesignStory_2 {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  text-decoration: underline;
+  font-family: "Jaldi-Regular", sans-serif;
+  font-size: 14px;
+}
+
+.ProductStories_2 {
+  position: absolute;
+  top: 55%;
+  left: 47%;
+  text-decoration: underline;
+  font-family: "Jaldi-Regular", sans-serif;
+  font-size: 14px;
+}
 
 
     /* Desktop Layout */
 
-    @media (min-width: 40em) {
-    #nav-menu ul {
-    display: flex;
-    flex-direction: row;
-    }
-    
-    #toggle-button {
-    display: none;
-    }  
-        
-     a.button {
-    display: inline-block;
-    }
-    .col-span-8 {
-        grid-column: span 8;
-    }
-    .col-span-4 {
-        grid-column: span 4;
-    }
-
-    .work-section {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    }
-    
-    .card {
-        flex: 0 1 324px;
-    }
 
 
 
-   /****** Navigation Using Flexbox ******/
+   /*
    nav {
     background-color:#f49ba3;
     padding: 0 1rem;
@@ -359,6 +698,7 @@ a.button {
     position: sticky;
     top: 0;
    }
+    
 
    nav ul {
     margin: 0;
@@ -381,7 +721,4 @@ a.button {
     transition: ease-in-out 250ms;
    }
 
-   nav a:hover {
-    background-color:#ff914d;
-    color:#fff;
-   }
+   */
