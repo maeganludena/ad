@@ -401,6 +401,10 @@ a.button4 {
 
  /* Our Story Page */
 
+ body{
+  background-color: #F9F3EE;
+ }
+
 .firstRow {
   position: relative;
   background-color:#EFE7DD;
@@ -516,7 +520,7 @@ a.button4 {
   position: relative;
   margin: -4%;
   scale: 60%;
-  background-color: #EFE7DD;
+  background-color: #F9F3EE;
 }
 
 
