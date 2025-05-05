@@ -36,7 +36,10 @@ color: #111;
 .home nav h1 {
   color: #fff;
 }
-
+nav h1 a {
+  text-decoration: none;
+  color: inherit; /* keeps the h1 color */
+}
 nav ul li {
   display: inline-block;
   font-size: 5px;
@@ -260,6 +263,11 @@ body {
 margin-bottom: 2rem;
 }
 
+p a {
+  text-decoration: none;
+  color: inherit; /* keeps the h1 color */
+}
+
 .footer-heading footer-1 {
 margin-left: 3%;
 width: 250px;
@@ -270,6 +278,11 @@ width: 250px;
   padding-top: 5%;
   width: 250px;
   }
+
+  .footer-heading a:hover {
+    background: rgba(120,137,149,0.4);
+   }
+
 
 h1 {
   text-transform: uppercase;
@@ -515,6 +528,15 @@ hr {
   text-align: center;
 }
 
+.p2row a:hover {
+  background: rgba(120,137,149,0.4);
+ }
+
+h3 a {
+  text-decoration: none;
+  color: inherit; /* keeps the h1 color */
+}
+
 .p2column {
   float: left;
   width: 33.33%;
@@ -582,4 +604,57 @@ max-width: 900px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+
+/* Contact Page - Contact Form*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 15px; /* Some padding */ 
+  border: 1px solid #ccc; /* gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 10px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #313131;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #472A28;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  width: 50%;
+  margin: auto;
+  color: #313131;
+  border-radius: 10px;
+  background-color: #ffff;
+  padding: 20px;
+}
+
+.contactformrow {
+  background-color: #fff;
+  padding-bottom: 5%;
+
+
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
 }
